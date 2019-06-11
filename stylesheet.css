@@ -152,5 +152,5 @@ h1{
     animation-duration:2s;
     animation-name: blink;
     animation-timing-function: linear; 
-    text-shadow: 0 0 3px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #21D4FD, 0 0 12px #21D4FD, 0 0 16px #21D4FD, 0 0 40px #21D4FD;
+    text-shadow: 0 0 3px rgba(255,255,255,0.8), 0 0 4px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.8), 0 0 8px rgba(33,212,253,0.8), 0 0 12px rgba(33,212,253,0.8), 0 0 16px rgba(33,212,253,0.8), 0 0 40px rgba(33,212,253,0.8);
 }
