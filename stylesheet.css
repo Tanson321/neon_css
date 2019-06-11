@@ -24,6 +24,10 @@
     border-radius: 50px;
 }*/
 
+body{
+    margin: 0 auto;
+}
+
 .contents-wrapper{
     width:100vw;
     height:100vh;
@@ -123,34 +127,87 @@
 
 .enter{
     position:absolute;
+    z-index: 1;
     width:320px;
     height:320px;
     border-radius:50%;
-    box-shadow:0 0 3px rgba(255,255,255,0.8), 0 0 4px rgba(33,212,253,0.8), 0 0 6px rgba(255,255,255,0.8), 0 0 8px #21D4FD, 0 0 12px rgba(33,212,253,0.8), 0 0 16px rgba(33,212,253,0.8), 0 0 40px rgba(33,212,253,0.8), 0 0 3px rgba(255,255,255,0.8) inset, 0 0 4px rgba(255,255,255,0.8) inset, 0 0 6px rgba(255,255,255,0.8) inset, 0 0 8px rgba(33,212,253,0.8) inset, 0 0 12px rgba(33,212,253,0.8) inset, 0 0 16px rgba(33,212,253,0.8) inset, 0 0 40px rgba(33,212,253,0.8) inset, 0 0 2000px rgba(255,255,255,0.3), 0 0 200px rgba(255,255,255,0.2) inset;
+    box-shadow: 0 0 3px 8px rgba(255,255,255,0.8),
+                0 0 3px rgba(255,255,255,0.8),
+                0 0 4px rgba(255,255,255,0.8),
+                0 0 6px rgba(255,255,255,0.8),
+                0 0 8px rgba(33,212,253,0.8),
+                0 0 12px rgba(33,212,253,0.8),
+                0 0 16px rgba(33,212,253,0.8),
+                0 0 40px rgba(33,212,253,0.8),
+                0 0 3px rgba(255,255,255,0.8) inset,
+                0 0 4px rgba(255,255,255,0.8) inset,
+                0 0 6px rgba(255,255,255,0.8) inset,
+                0 0 8px rgba(33,212,253,0.8) inset,
+                0 0 12px rgba(33,212,253,0.8) inset,
+                0 0 16px rgba(33,212,253,0.8) inset,
+                0 0 40px rgba(33,212,253,0.8) inset,
+                0 0 4000px rgba(255,255,255,0.4),
+                0 0 4000px rgba(33,212,253,0.4),
+                0 0 200px rgba(255,255,255,0.2) inset,
+                0 0 200px rgba(33,212,253,0.4) inset;
     margin:0 auto;
     align-self: center;
-    z-index: 1;
     animation-duration:2s;
     animation-name: blink;
     animation-timing-function: linear; 
 }
 
+@font-face{
+    font-family: 'plasma10';
+    src:url(Plasma10.ttf) format("truetype"),
+        local("plasma10");
+}
+
 h1{ 
+    font-family: plasma10, Asap, sans-serif;
     position:absolute;
     top:0;
     right:0;
     left:0;
     bottom:0;
-    display:hidden;
     line-height: 220px;
     text-align: center;
-    font-family: 'Asap', sans-serif;
     font-size: 80px;
-    letter-spacing:5px;
+    letter-spacing:8px;
+    text-decoration-line: overline;
+    text-decoration-color: rgba(255,255,255,0.8);
     text-transform: uppercase;
-    color: #fff;
+    color: rgba(255,255,255,0.8);
     animation-duration:2s;
     animation-name: blink;
     animation-timing-function: linear; 
-    text-shadow: 0 0 3px rgba(255,255,255,0.8), 0 0 4px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.8), 0 0 8px rgba(33,212,253,0.8), 0 0 12px rgba(33,212,253,0.8), 0 0 16px rgba(33,212,253,0.8), 0 0 40px rgba(33,212,253,0.8);
+    text-shadow: 
+    0 0 3px rgba(255,255,255,0.8),
+    0 0 4px rgba(255,255,255,0.8),
+    0 0 6px rgba(255,255,255,0.8),
+    0 0 8px rgba(33,212,253,0.8),
+    0 0 12px rgba(33,212,253,0.8),
+    0 0 16px rgba(33,212,253,0.8),
+    0 0 40px rgba(33,212,253,0.8);
+}
+
+span.E{
+    font-family: plasma10, Asap, sans-serif;
+    display:hidden;
+    line-height: 220px;
+    font-size: 80px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    animation-delay: 2s;
+    animation-duration:2s;
+    animation-name: blink;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+    text-shadow: 
+    0 0 4px rgba(255,255,255,0.8),
+    0 0 6px rgba(255,255,255,0.8),
+    0 0 12px rgba(33,212,253,0.8),
+    0 0 16px rgba(33,212,253,0.8),
+    0 0 40px rgba(33,212,253,0.8);
 }
