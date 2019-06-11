@@ -146,15 +146,49 @@ body{
                 0 0 12px rgba(33,212,253,0.8) inset,
                 0 0 16px rgba(33,212,253,0.8) inset,
                 0 0 40px rgba(33,212,253,0.8) inset,
-                0 0 4000px rgba(255,255,255,0.4),
-                0 0 4000px rgba(33,212,253,0.4),
-                0 0 200px rgba(255,255,255,0.2) inset,
-                0 0 200px rgba(33,212,253,0.4) inset;
+                0 0 500px rgba(255,255,255,0.2),
+                0 0 500px rgba(33,212,253,0.2),
+                0 0 200px rgba(255,255,255,0.1) inset,
+                0 0 200px rgba(33,212,253,0.1) inset;
     margin:0 auto;
     align-self: center;
     animation-duration:2s;
     animation-name: blink;
     animation-timing-function: linear; 
+}
+
+_::-webkit-full-page-media, _:future, :root .enter {
+
+    position:absolute;
+    z-index: 1;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    box-shadow: 0 0 3px 8px rgba(255,255,255,0.8),
+                0 0 3px rgba(255,255,255,0.8),
+                0 0 4px rgba(255,255,255,0.8),
+                0 0 6px rgba(255,255,255,0.8),
+                0 0 8px rgba(33,212,253,0.8),
+                0 0 12px rgba(33,212,253,0.8),
+                0 0 16px rgba(33,212,253,0.8),
+                0 0 40px rgba(33,212,253,0.8),
+                0 0 3px rgba(255,255,255,0.8) inset,
+                0 0 4px rgba(255,255,255,0.8) inset,
+                0 0 6px rgba(255,255,255,0.8) inset,
+                0 0 8px rgba(33,212,253,0.8) inset,
+                0 0 12px rgba(33,212,253,0.8) inset,
+                0 0 16px rgba(33,212,253,0.8) inset,
+                0 0 40px rgba(33,212,253,0.8) inset,
+                0 0 500px rgba(255,255,255,0.2),
+                0 0 500px rgba(33,212,253,0.2),
+                0 0 200px rgba(255,255,255,0.1) inset,
+                0 0 200px rgba(33,212,253,0.1) inset;
+    margin:0 auto;
+    align-self: center;
+    animation-duration:2s;
+    animation-name: blink;
+    animation-timing-function: linear; 
+    
 }
 
 @font-face{
@@ -170,9 +204,9 @@ h1{
     right:0;
     left:0;
     bottom:0;
-    line-height: 220px;
+    line-height: 230px;
     text-align: center;
-    font-size: 80px;
+    font-size: 81px;
     letter-spacing:8px;
     text-decoration-line: overline;
     text-decoration-color: rgba(255,255,255,0.8);
@@ -191,16 +225,24 @@ h1{
     0 0 40px rgba(33,212,253,0.8);
 }
 
+_::-webkit-full-page-media, _:future, :root h1 {
+    letter-spacing: 7px;
+    text-decoration-line: overline;
+    text-decoration-color: rgba(255,255,255,0.8);
+}
+
+
+
 span.E{
     font-family: plasma10, Asap, sans-serif;
     display:hidden;
-    line-height: 220px;
-    font-size: 80px;
+    line-height: 230px;
+    font-size: 81px;
     letter-spacing:8px;
     text-transform: uppercase;
     color: rgba(255,255,255,0.8);
-    animation-delay: 2s;
-    animation-duration:2s;
+    animation-delay: 2.5s;
+    animation-duration:3s;
     animation-name: blink;
     animation-timing-function: linear; 
     animation-iteration-count: infinite;
